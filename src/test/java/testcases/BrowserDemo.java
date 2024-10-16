@@ -12,7 +12,7 @@ public class BrowserDemo {
 		String browserName = "edge";
 		
 		//int a;
-		WebDriver driver = null;
+		WebDriver driver =null;
 		if (browserName.equalsIgnoreCase("CHROME")) {
 			driver = new ChromeDriver();
 		}
@@ -24,7 +24,9 @@ public class BrowserDemo {
 		}
 
 		/* TestNG,Apache POI,Java Mail....
-		 * Options opt = driver.manage(); Window win = opt.window(); win.maximize();
+		 * Options opt = driver.manage(); 
+		 * Window win = opt.window(); 
+		 * win.maximize();
 		 */
 		
 		//Method Chaining
