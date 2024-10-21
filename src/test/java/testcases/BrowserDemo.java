@@ -9,7 +9,7 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 public class BrowserDemo {
 
 	public static void main(String[] args) {
-		String browserName = "edge";
+		String browserName = "firefox";
 		
 		//int a;
 		WebDriver driver =null;
