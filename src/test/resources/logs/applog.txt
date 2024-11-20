@@ -1,0 +1,8 @@
+INFO    2024-11-20 10:19:23,381 [main] workingOnProperties.ReadProperties  - Config properties file has been loaded
+INFO    2024-11-20 10:19:23,386 [main] workingOnProperties.ReadProperties  - OR properties file has been loaded
+INFO    2024-11-20 10:19:29,818 [main] workingOnProperties.ReadProperties  - Edge browser has been launched
+INFO    2024-11-20 10:19:29,983 [main] workingOnProperties.ReadProperties  - Browser has been maximized
+INFO    2024-11-20 10:19:32,063 [main] workingOnProperties.ReadProperties  - Opened url: https://facebook.com
+INFO    2024-11-20 10:19:32,237 [main] workingOnProperties.ReadProperties  - Typed on email field
+INFO    2024-11-20 10:19:32,624 [main] workingOnProperties.ReadProperties  - Typed on password field
+INFO    2024-11-20 10:19:32,972 [main] workingOnProperties.ReadProperties  - Clicked on Login button
