@@ -1,8 +1,18 @@
-INFO    2024-11-20 10:19:23,381 [main] workingOnProperties.ReadProperties  - Config properties file has been loaded
-INFO    2024-11-20 10:19:23,386 [main] workingOnProperties.ReadProperties  - OR properties file has been loaded
-INFO    2024-11-20 10:19:29,818 [main] workingOnProperties.ReadProperties  - Edge browser has been launched
-INFO    2024-11-20 10:19:29,983 [main] workingOnProperties.ReadProperties  - Browser has been maximized
-INFO    2024-11-20 10:19:32,063 [main] workingOnProperties.ReadProperties  - Opened url: https://facebook.com
-INFO    2024-11-20 10:19:32,237 [main] workingOnProperties.ReadProperties  - Typed on email field
-INFO    2024-11-20 10:19:32,624 [main] workingOnProperties.ReadProperties  - Typed on password field
-INFO    2024-11-20 10:19:32,972 [main] workingOnProperties.ReadProperties  - Clicked on Login button
+INFO    2024-11-22 09:35:55,365 [main] workingOnProperties.ReadProperties  - Config properties file has been loaded
+INFO    2024-11-22 09:35:55,367 [main] workingOnProperties.ReadProperties  - OR properties file has been loaded
+INFO    2024-11-22 09:35:59,629 [main] workingOnProperties.ReadProperties  - Edge browser has been launched
+INFO    2024-11-22 09:35:59,703 [main] workingOnProperties.ReadProperties  - Browser has been maximized
+INFO    2024-11-22 09:36:01,498 [main] workingOnProperties.ReadProperties  - Opened url: https://facebook.com
+INFO    2024-11-22 09:36:01,673 [main] workingOnProperties.ReadProperties  - Typed on field with a keyword as : email_ID with  a value as : testing@gmail.com
+ERROR   2024-11-22 09:36:11,727 [main] workingOnProperties.ReadProperties  - Element is not found - unable to type on element with keyword: pass_ID
+ERROR   2024-11-22 09:36:11,731 [main] workingOnProperties.ReadProperties  - no such element: Unable to locate element: {"method":"css selector","selector":"#pass23"}
+  (Session info: MicrosoftEdge=131.0.2903.51)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.26.0', revision: '8ccf0219d7'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.4'
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Command: [46cb49268eeb08499a56dd55c2df4d0e, findElement {value=pass23, using=id}]
+Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 131.0.2903.51, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:61170}, msedge: {msedgedriverVersion: 131.0.2903.51 (e8c8535333b9..., userDataDir: C:\Users\91733\AppData\Loca...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:61170/devtoo..., se:cdpVersion: 131.0.2903.51, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 46cb49268eeb08499a56dd55c2df4d0e
+INFO    2024-11-22 09:36:11,732 [main] workingOnProperties.ReadProperties  - Typed on field with a keyword as : pass_ID with  a value as : password123
+INFO    2024-11-22 09:36:11,961 [main] workingOnProperties.ReadProperties  - Clicked on field with a keyword as : loginBtn_XPATH

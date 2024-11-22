@@ -9,6 +9,7 @@ import org.apache.log4j.Logger;
 import org.apache.log4j.PropertyConfigurator;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
@@ -21,7 +22,49 @@ static Properties config;
 static Properties or;
 static Logger log=Logger.getLogger(ReadProperties.class);
 
+public static WebElement getWebElement(String keyword) {
+	WebElement ele = null;
+	if(keyword.endsWith("_ID")) {
+		ele=driver.findElement(By.id(or.getProperty(keyword)));
+	}
+	else if(keyword.endsWith("_NAME")) {
+		driver.findElement(By.name(or.getProperty(keyword)));
+	}
+	else if(keyword.endsWith("_CSS")) {
+		driver.findElement(By.cssSelector(or.getProperty(keyword)));
+	}
+	else if(keyword.endsWith("_XPATH")) {
+		driver.findElement(By.xpath(or.getProperty(keyword)));
+	}
+	else if(keyword.endsWith("_CLASS")) {
+		driver.findElement(By.className(or.getProperty(keyword)));
+	}
+	return ele;
+}
 
+
+//type/click/select
+public static void type(String keyword,String value) {
+	try {
+	getWebElement(keyword).sendKeys(value);
+	}
+	catch (Exception e) {
+		log.error("Element is not found - unable to type on element with keyword: " + keyword);
+		log.error(e.getMessage());
+	}
+	log.info("Typed on field with a keyword as : " + keyword + " with  a value as : " + value);
+}
+
+public static void click(String keyword) {
+	try {
+		getWebElement(keyword).click();
+	}
+	catch(Exception e) {
+		log.error("Unable to click on element with keyword: " + keyword);
+		log.error(e.getMessage());
+	}
+	log.info("Clicked on field with a keyword as : " + keyword);
+}
 	public static void main(String[] args) throws IOException {
 		fis=new FileInputStream("./src/test/resources/properties/log4j.properties");
 		PropertyConfigurator.configure(fis);
@@ -56,17 +99,11 @@ static Logger log=Logger.getLogger(ReadProperties.class);
 		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(Integer.parseInt(config.getProperty("explicit.wait"))));
 		driver.get(config.getProperty("testsiteurl"));
 		log.info("Opened url: " + config.getProperty("testsiteurl"));
-		try {
-		driver.findElement(By.id(or.getProperty("email_ID"))).sendKeys("testing@gmail.com");
-		log.info("Typed on email field");
-		driver.findElement(By.id(or.getProperty("pass_ID"))).sendKeys("password123");
-		log.info("Typed on password field");
-		driver.findElement(By.xpath(or.getProperty("loginBtn_XPATH"))).click();
-		log.info("Clicked on Login button");
-		}
-		catch (Exception e) {
-			log.error(e.getMessage());
-		}
+		
+		type("email_ID","testing@gmail.com");
+		type("pass_ID","password123");
+		click("loginBtn_XPATH");
+		
 		
 	}
 
