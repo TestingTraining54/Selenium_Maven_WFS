@@ -1,106 +1,103 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="5" passed="0" failed="3" skipped="2">
+<testng-results ignored="0" total="5" passed="2" failed="2" skipped="1">
   <reporter-output>
+    <line>
+      <![CDATA[Testcase has been started: doUserReg]]>
+    </line>
+    <line>
+      <![CDATA[Testcase has been passed: doUserReg]]>
+    </line>
+    <line>
+      <![CDATA[Testcase has been started: doLogin]]>
+    </line>
+    <line>
+      <![CDATA[Testcase has been passed: doLogin]]>
+    </line>
+    <line>
+      <![CDATA[Testcase has been started: softAssertDemo]]>
+    </line>
+    <line>
+      <![CDATA[Screenshot link as the testcase has been failed: softAssertDemo]]>
+    </line>
+    <line>
+      <![CDATA[<a target="_blank" href="C:\Users\91733\OneDrive\Desktop\nw.jpg">screenshotlink</a>]]>
+    </line>
+    <line>
+      <![CDATA[<a target="_blank" href="C:\Users\91733\OneDrive\Desktop\nw.jpg"><img src="C:\Users\91733\OneDrive\Desktop\nw.jpg" width=200 height=200/></a>]]>
+    </line>
+    <line>
+      <![CDATA[Testcase has been started: userReg]]>
+    </line>
+    <line>
+      <![CDATA[Screenshot link as the testcase has been failed: userReg]]>
+    </line>
+    <line>
+      <![CDATA[<a target="_blank" href="C:\Users\91733\OneDrive\Desktop\nw.jpg">screenshotlink</a>]]>
+    </line>
+    <line>
+      <![CDATA[<a target="_blank" href="C:\Users\91733\OneDrive\Desktop\nw.jpg"><img src="C:\Users\91733\OneDrive\Desktop\nw.jpg" width=200 height=200/></a>]]>
+    </line>
+    <line>
+      <![CDATA[Testcase has been started: doSkip]]>
+    </line>
+    <line>
+      <![CDATA[Testcase has been skipped: doSkip]]>
+    </line>
   </reporter-output>
-  <suite started-at="2024-11-25T10:23:05 IST" name="TestNG Suite1" finished-at="2024-11-25T10:23:05 IST" duration-ms="268">
+  <suite started-at="2024-11-27T10:03:18 IST" name="TestNG Suite1" finished-at="2024-11-27T10:03:18 IST" duration-ms="206">
     <groups>
     </groups>
-    <test started-at="2024-11-25T10:23:05 IST" name="Testcase 1" finished-at="2024-11-25T10:23:05 IST" duration-ms="268">
+    <test started-at="2024-11-27T10:03:18 IST" name="Testcase 1" finished-at="2024-11-27T10:03:18 IST" duration-ms="86">
       <class name="testngTestcases.Testcase1">
-        <test-method is-config="true" signature="startDB()[pri:0, instance:testngTestcases.Testcase1@51399530]" started-at="2024-11-25T10:23:05 IST" name="startDB" finished-at="2024-11-25T10:23:05 IST" duration-ms="34" status="PASS">
+        <test-method is-config="true" signature="startDB()[pri:0, instance:testngTestcases.Testcase1@11c9af63]" started-at="2024-11-27T10:03:18 IST" name="startDB" finished-at="2024-11-27T10:03:18 IST" duration-ms="12" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- startDB -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:testngTestcases.Testcase1@51399530]" started-at="2024-11-25T10:23:05 IST" name="setUp" finished-at="2024-11-25T10:23:05 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:testngTestcases.Testcase1@11c9af63]" started-at="2024-11-27T10:03:18 IST" name="setUp" finished-at="2024-11-27T10:03:18 IST" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="doUserReg()[pri:0, instance:testngTestcases.Testcase1@51399530]" started-at="2024-11-25T10:23:05 IST" name="doUserReg" finished-at="2024-11-25T10:23:05 IST" duration-ms="29" status="FAIL">
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[user registration failed]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: user registration failed
-at org.testng.Assert.fail(Assert.java:111)
-at testngTestcases.Testcase1.doUserReg(Testcase1.java:52)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-at org.testng.TestRunner.privateRun(TestRunner.java:739)
-at org.testng.TestRunner.run(TestRunner.java:614)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-at org.testng.TestNG.runSuites(TestNG.java:1112)
-at org.testng.TestNG.run(TestNG.java:1079)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
+        <test-method signature="doUserReg()[pri:0, instance:testngTestcases.Testcase1@11c9af63]" started-at="2024-11-27T10:03:18 IST" name="doUserReg" finished-at="2024-11-27T10:03:18 IST" duration-ms="11" status="PASS">
           <reporter-output>
+            <line>
+              <![CDATA[Testcase has been started: doUserReg]]>
+            </line>
+            <line>
+              <![CDATA[Testcase has been passed: doUserReg]]>
+            </line>
           </reporter-output>
         </test-method> <!-- doUserReg -->
-        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:testngTestcases.Testcase1@51399530]" started-at="2024-11-25T10:23:05 IST" name="closeBrowser" finished-at="2024-11-25T10:23:05 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:testngTestcases.Testcase1@11c9af63]" started-at="2024-11-27T10:03:18 IST" name="closeBrowser" finished-at="2024-11-27T10:03:18 IST" duration-ms="2" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeBrowser -->
-        <test-method signature="doLogin()[pri:0, instance:testngTestcases.Testcase1@51399530]" started-at="2024-11-25T10:23:05 IST" name="doLogin" finished-at="2024-11-25T10:23:05 IST" depends-on-methods="testngTestcases.Testcase1.doUserReg" duration-ms="0" status="SKIP">
-          <exception class="java.lang.Throwable">
-            <message>
-              <![CDATA[Method testngTestcases.Testcase1.doLogin() on instance testngTestcases.Testcase1@51399530 depends on not successfully finished methods 
-[testngTestcases.Testcase1.doUserReg() on instance testngTestcases.Testcase1@51399530]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.Throwable: Method testngTestcases.Testcase1.doLogin() on instance testngTestcases.Testcase1@51399530 depends on not successfully finished methods 
-[testngTestcases.Testcase1.doUserReg() on instance testngTestcases.Testcase1@51399530]
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:159)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-at org.testng.TestRunner.privateRun(TestRunner.java:739)
-at org.testng.TestRunner.run(TestRunner.java:614)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-at org.testng.TestNG.runSuites(TestNG.java:1112)
-at org.testng.TestNG.run(TestNG.java:1079)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.Throwable -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:testngTestcases.Testcase1@11c9af63]" started-at="2024-11-27T10:03:18 IST" name="setUp" finished-at="2024-11-27T10:03:18 IST" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="doLogin()[pri:0, instance:testngTestcases.Testcase1@11c9af63]" started-at="2024-11-27T10:03:18 IST" name="doLogin" finished-at="2024-11-27T10:03:18 IST" depends-on-methods="testngTestcases.Testcase1.doUserReg" duration-ms="4" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Testcase has been started: doLogin]]>
+            </line>
+            <line>
+              <![CDATA[Testcase has been passed: doLogin]]>
+            </line>
+          </reporter-output>
         </test-method> <!-- doLogin -->
-        <test-method is-config="true" signature="CloseDB()[pri:0, instance:testngTestcases.Testcase1@51399530]" started-at="2024-11-25T10:23:05 IST" name="CloseDB" finished-at="2024-11-25T10:23:05 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:testngTestcases.Testcase1@11c9af63]" started-at="2024-11-27T10:03:18 IST" name="closeBrowser" finished-at="2024-11-27T10:03:18 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+        <test-method is-config="true" signature="CloseDB()[pri:0, instance:testngTestcases.Testcase1@11c9af63]" started-at="2024-11-27T10:03:18 IST" name="CloseDB" finished-at="2024-11-27T10:03:18 IST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- CloseDB -->
       </class> <!-- testngTestcases.Testcase1 -->
+    </test> <!-- Testcase 1 -->
+    <test started-at="2024-11-27T10:03:18 IST" name="Testcase 2" finished-at="2024-11-27T10:03:18 IST" duration-ms="25">
       <class name="testngTestcases.Testcase2">
-        <test-method signature="softAssertDemo()[pri:0, instance:testngTestcases.Testcase2@13c9d689]" started-at="2024-11-25T10:23:05 IST" name="softAssertDemo" finished-at="2024-11-25T10:23:05 IST" duration-ms="24" status="FAIL">
+        <test-method signature="softAssertDemo()[pri:0, instance:testngTestcases.Testcase2@3e6ef8ad]" started-at="2024-11-27T10:03:18 IST" name="softAssertDemo" finished-at="2024-11-27T10:03:18 IST" duration-ms="14" status="FAIL">
           <exception class="java.lang.AssertionError">
             <message>
               <![CDATA[The following asserts failed:
@@ -146,51 +143,25 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
             </full-stacktrace>
           </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
+            <line>
+              <![CDATA[Testcase has been started: softAssertDemo]]>
+            </line>
+            <line>
+              <![CDATA[Screenshot link as the testcase has been failed: softAssertDemo]]>
+            </line>
+            <line>
+              <![CDATA[<a target="_blank" href="C:\Users\91733\OneDrive\Desktop\nw.jpg">screenshotlink</a>]]>
+            </line>
+            <line>
+              <![CDATA[<a target="_blank" href="C:\Users\91733\OneDrive\Desktop\nw.jpg"><img src="C:\Users\91733\OneDrive\Desktop\nw.jpg" width=200 height=200/></a>]]>
+            </line>
           </reporter-output>
         </test-method> <!-- softAssertDemo -->
       </class> <!-- testngTestcases.Testcase2 -->
+    </test> <!-- Testcase 2 -->
+    <test started-at="2024-11-27T10:03:18 IST" name="Testcase 3" finished-at="2024-11-27T10:03:18 IST" duration-ms="15">
       <class name="testngTestcases.Testcase3">
-        <test-method signature="doSkip()[pri:0, instance:testngTestcases.Testcase3@3754a4bf]" started-at="2024-11-25T10:23:05 IST" name="doSkip" finished-at="2024-11-25T10:23:05 IST" duration-ms="3" status="SKIP">
-          <exception class="org.testng.SkipException">
-            <message>
-              <![CDATA[Skip the testcase intentionally]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.testng.SkipException: Skip the testcase intentionally
-at testngTestcases.Testcase3.doSkip(Testcase3.java:17)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-at org.testng.TestRunner.privateRun(TestRunner.java:739)
-at org.testng.TestRunner.run(TestRunner.java:614)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-at org.testng.TestNG.runSuites(TestNG.java:1112)
-at org.testng.TestNG.run(TestNG.java:1079)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.testng.SkipException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- doSkip -->
-        <test-method signature="userReg()[pri:0, instance:testngTestcases.Testcase3@3754a4bf]" started-at="2024-11-25T10:23:05 IST" name="userReg" finished-at="2024-11-25T10:23:05 IST" duration-ms="7" status="FAIL">
+        <test-method signature="userReg()[pri:1, instance:testngTestcases.Testcase3@62230c58]" started-at="2024-11-27T10:03:18 IST" name="userReg" finished-at="2024-11-27T10:03:18 IST" duration-ms="2" status="FAIL">
           <exception class="java.lang.AssertionError">
             <message>
               <![CDATA[Intentionally fails a testcase]]>
@@ -229,9 +200,67 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
             </full-stacktrace>
           </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
+            <line>
+              <![CDATA[Testcase has been started: userReg]]>
+            </line>
+            <line>
+              <![CDATA[Screenshot link as the testcase has been failed: userReg]]>
+            </line>
+            <line>
+              <![CDATA[<a target="_blank" href="C:\Users\91733\OneDrive\Desktop\nw.jpg">screenshotlink</a>]]>
+            </line>
+            <line>
+              <![CDATA[<a target="_blank" href="C:\Users\91733\OneDrive\Desktop\nw.jpg"><img src="C:\Users\91733\OneDrive\Desktop\nw.jpg" width=200 height=200/></a>]]>
+            </line>
           </reporter-output>
         </test-method> <!-- userReg -->
+        <test-method signature="doSkip()[pri:2, instance:testngTestcases.Testcase3@62230c58]" started-at="2024-11-27T10:03:18 IST" name="doSkip" finished-at="2024-11-27T10:03:18 IST" duration-ms="3" status="SKIP">
+          <exception class="org.testng.SkipException">
+            <message>
+              <![CDATA[Skip the testcase intentionally]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.SkipException: Skip the testcase intentionally
+at testngTestcases.Testcase3.doSkip(Testcase3.java:17)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:739)
+at org.testng.TestRunner.run(TestRunner.java:614)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.SkipException -->
+          <reporter-output>
+            <line>
+              <![CDATA[Testcase has been started: doSkip]]>
+            </line>
+            <line>
+              <![CDATA[Testcase has been skipped: doSkip]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- doSkip -->
       </class> <!-- testngTestcases.Testcase3 -->
-    </test> <!-- Testcase 1 -->
+    </test> <!-- Testcase 3 -->
   </suite> <!-- TestNG Suite1 -->
 </testng-results>

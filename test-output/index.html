@@ -25,7 +25,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite, 3 failed tests</span>
+      <span class="top-banner-font-1">1 suite, 2 failed tests</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -55,7 +55,7 @@
                 </li>
                 <li>
                   <a href="#" panel-name="testlist-TestNG_Suite1" class="navigator-link ">
-                    <span class="test-stats">1 test</span>
+                    <span class="test-stats">3 tests</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -92,7 +92,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">5 methods, 3 failed,  2 skipped,  </span>
+                    <span class="method-stats">5 methods, 2 failed,  1 skipped,  2 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title failed">Failed methods</span>
@@ -101,11 +101,6 @@
                       <a href="#" panel-name="suite-TestNG_Suite1" class="show-methods failed suite-TestNG_Suite1"> (show)</a> <!-- show-methods failed suite-TestNG_Suite1 -->
                     </span>
                     <div class="method-list-content failed suite-TestNG_Suite1">
-                      <span>
-                        <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-TestNG_Suite1" title="testngTestcases.Testcase1" class="method navigator-link" hash-for-method="doUserReg">doUserReg</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
                       <span>
                         <img src="failed.png" width="3%"/>
                         <a href="#" panel-name="suite-TestNG_Suite1" title="testngTestcases.Testcase2" class="method navigator-link" hash-for-method="softAssertDemo">softAssertDemo</a> <!-- method navigator-link -->
@@ -127,15 +122,29 @@
                     <div class="method-list-content skipped suite-TestNG_Suite1">
                       <span>
                         <img src="skipped.png" width="3%"/>
-                        <a href="#" panel-name="suite-TestNG_Suite1" title="testngTestcases.Testcase1" class="method navigator-link" hash-for-method="doLogin">doLogin</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="skipped.png" width="3%"/>
                         <a href="#" panel-name="suite-TestNG_Suite1" title="testngTestcases.Testcase3" class="method navigator-link" hash-for-method="doSkip">doSkip</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content skipped suite-TestNG_Suite1 -->
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-TestNG_Suite1" class="hide-methods passed suite-TestNG_Suite1"> (hide)</a> <!-- hide-methods passed suite-TestNG_Suite1 -->
+                      <a href="#" panel-name="suite-TestNG_Suite1" class="show-methods passed suite-TestNG_Suite1"> (show)</a> <!-- show-methods passed suite-TestNG_Suite1 -->
+                    </span>
+                    <div class="method-list-content passed suite-TestNG_Suite1">
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-TestNG_Suite1" title="testngTestcases.Testcase1" class="method navigator-link" hash-for-method="doLogin">doLogin</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-TestNG_Suite1" title="testngTestcases.Testcase1" class="method navigator-link" hash-for-method="doUserReg">doUserReg</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-TestNG_Suite1 -->
                   </li>
                 </ul>
               </div> <!-- suite-section-content -->
@@ -150,16 +159,16 @@
           <div class="suite-TestNG_Suite1-class-failed">
             <div class="main-panel-header rounded-window-top">
               <img src="failed.png"/>
-              <span class="class-name">testngTestcases.Testcase1</span>
+              <span class="class-name">testngTestcases.Testcase3</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="doUserReg">
-                  </a> <!-- doUserReg -->
-                  <span class="method-name">doUserReg</span>
-                  <div class="stack-trace">java.lang.AssertionError: user registration failed
-	at testngTestcases.Testcase1.doUserReg(Testcase1.java:52)
+                  <a name="userReg">
+                  </a> <!-- userReg -->
+                  <span class="method-name">userReg</span>
+                  <div class="stack-trace">java.lang.AssertionError: Intentionally fails a testcase
+	at testngTestcases.Testcase3.userReg(Testcase3.java:12)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
 ... Removed 26 stack frames
 </div> <!-- stack-trace -->
@@ -190,46 +199,6 @@
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
           </div> <!-- suite-TestNG_Suite1-class-failed -->
-          <div class="suite-TestNG_Suite1-class-failed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="failed.png"/>
-              <span class="class-name">testngTestcases.Testcase3</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="userReg">
-                  </a> <!-- userReg -->
-                  <span class="method-name">userReg</span>
-                  <div class="stack-trace">java.lang.AssertionError: Intentionally fails a testcase
-	at testngTestcases.Testcase3.userReg(Testcase3.java:12)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-... Removed 26 stack frames
-</div> <!-- stack-trace -->
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-TestNG_Suite1-class-failed -->
-          <div class="suite-TestNG_Suite1-class-skipped">
-            <div class="main-panel-header rounded-window-top">
-              <img src="skipped.png"/>
-              <span class="class-name">testngTestcases.Testcase1</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="doLogin">
-                  </a> <!-- doLogin -->
-                  <span class="method-name">doLogin</span>
-                  <div class="stack-trace">java.lang.Throwable: Method testngTestcases.Testcase1.doLogin() on instance testngTestcases.Testcase1@51399530 depends on not successfully finished methods 
-[testngTestcases.Testcase1.doUserReg() on instance testngTestcases.Testcase1@51399530]
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-... Removed 18 stack frames
-</div> <!-- stack-trace -->
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-TestNG_Suite1-class-skipped -->
           <div class="suite-TestNG_Suite1-class-skipped">
             <div class="main-panel-header rounded-window-top">
               <img src="skipped.png"/>
@@ -250,6 +219,28 @@
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
           </div> <!-- suite-TestNG_Suite1-class-skipped -->
+          <div class="suite-TestNG_Suite1-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">testngTestcases.Testcase1</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="doLogin">
+                  </a> <!-- doLogin -->
+                  <span class="method-name">doLogin</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="doUserReg">
+                  </a> <!-- doUserReg -->
+                  <span class="method-name">doUserReg</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-TestNG_Suite1-class-passed -->
         </div> <!-- panel TestNG_Suite1 -->
         <div panel-name="test-xml-TestNG_Suite1" class="panel">
           <div class="main-panel-header rounded-window-top">
@@ -260,13 +251,25 @@
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
 &lt;suite name=&quot;TestNG Suite1&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
+  &lt;listeners&gt;
+    &lt;listener class-name=&quot;testngListener.CustomListener&quot;/&gt;
+    &lt;listener class-name=&quot;org.uncommons.reportng.HTMLReporter&quot;/&gt;
+  &lt;/listeners&gt;
   &lt;test thread-count=&quot;5&quot; name=&quot;Testcase 1&quot;&gt;
     &lt;classes&gt;
       &lt;class name=&quot;testngTestcases.Testcase1&quot;/&gt;
-      &lt;class name=&quot;testngTestcases.Testcase2&quot;/&gt;
-      &lt;class name=&quot;testngTestcases.Testcase3&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Testcase 1 --&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;Testcase 2&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;testngTestcases.Testcase2&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Testcase 2 --&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;Testcase 3&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;testngTestcases.Testcase3&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Testcase 3 --&gt;
 &lt;/suite&gt; &lt;!-- TestNG Suite1 --&gt;
             </pre>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -278,7 +281,13 @@
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">Testcase 1 (3 classes)</span>
+                <span class="test-name">Testcase 1 (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">Testcase 2 (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">Testcase 3 (1 class)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -306,30 +315,30 @@ data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
 data.addRows(5);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'doUserReg')
-data.setCell(0, 2, 'testngTestcases.Testcase1')
-data.setCell(0, 3, 29);
+data.setCell(0, 1, 'softAssertDemo')
+data.setCell(0, 2, 'testngTestcases.Testcase2')
+data.setCell(0, 3, 14);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'softAssertDemo')
-data.setCell(1, 2, 'testngTestcases.Testcase2')
-data.setCell(1, 3, 24);
+data.setCell(1, 1, 'doUserReg')
+data.setCell(1, 2, 'testngTestcases.Testcase1')
+data.setCell(1, 3, 11);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'userReg')
-data.setCell(2, 2, 'testngTestcases.Testcase3')
-data.setCell(2, 3, 7);
+data.setCell(2, 1, 'doLogin')
+data.setCell(2, 2, 'testngTestcases.Testcase1')
+data.setCell(2, 3, 4);
 data.setCell(3, 0, 3)
 data.setCell(3, 1, 'doSkip')
 data.setCell(3, 2, 'testngTestcases.Testcase3')
 data.setCell(3, 3, 3);
 data.setCell(4, 0, 4)
-data.setCell(4, 1, 'doLogin')
-data.setCell(4, 2, 'testngTestcases.Testcase1')
-data.setCell(4, 3, 0);
+data.setCell(4, 1, 'userReg')
+data.setCell(4, 2, 'testngTestcases.Testcase3')
+data.setCell(4, 3, 2);
 window.suiteTableData['TestNG_Suite1']= { tableData: data, tableDiv: 'times-div-TestNG_Suite1'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 63 ms</span>
+              <span class="suite-total-time">Total running time: 34 ms</span>
               <div id="times-div-TestNG_Suite1">
               </div> <!-- times-div-TestNG_Suite1 -->
             </div> <!-- times-div -->
@@ -340,6 +349,45 @@ return data;
             <span class="header-content">Reporter output for TestNG Suite1</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">doUserReg</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">Testcase has been started: doUserReg</span>
+                <span class="reporter-method-output">Testcase has been passed: doUserReg</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">doLogin</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">Testcase has been started: doLogin</span>
+                <span class="reporter-method-output">Testcase has been passed: doLogin</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">softAssertDemo</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">Testcase has been started: softAssertDemo</span>
+                <span class="reporter-method-output">Screenshot link as the testcase has been failed: softAssertDemo</span>
+                <span class="reporter-method-output"><a target="_blank" href="C:\Users\91733\OneDrive\Desktop\nw.jpg">screenshotlink</a></span>
+                <span class="reporter-method-output"><a target="_blank" href="C:\Users\91733\OneDrive\Desktop\nw.jpg"><img src="C:\Users\91733\OneDrive\Desktop\nw.jpg" width=200 height=200/></a></span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">userReg</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">Testcase has been started: userReg</span>
+                <span class="reporter-method-output">Screenshot link as the testcase has been failed: userReg</span>
+                <span class="reporter-method-output"><a target="_blank" href="C:\Users\91733\OneDrive\Desktop\nw.jpg">screenshotlink</a></span>
+                <span class="reporter-method-output"><a target="_blank" href="C:\Users\91733\OneDrive\Desktop\nw.jpg"><img src="C:\Users\91733\OneDrive\Desktop\nw.jpg" width=200 height=200/></a></span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">doSkip</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">Testcase has been started: doSkip</span>
+                <span class="reporter-method-output">Testcase has been skipped: doSkip</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
         <div panel-name="ignored-methods-TestNG_Suite1" class="panel">
@@ -362,21 +410,31 @@ return data;
               </div> <!-- configuration-class before -->
               <div class="configuration-method before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">62 ms</span>
+                <span class="method-start">22 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <img src="failed.png">
-                </img>
                 <span class="method-name">doUserReg</span>
-                <span class="method-start">69 ms</span>
+                <span class="method-start">23 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">closeBrowser</span>
-                <span class="method-start">108 ms</span>
+                <span class="method-start">38 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">48 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">doLogin</span>
+                <span class="method-start">50 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">closeBrowser</span>
+                <span class="method-start">59 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-class after">
                 <span class="method-name">CloseDB</span>
-                <span class="method-start">133 ms</span>
+                <span class="method-start">63 ms</span>
               </div> <!-- configuration-class after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
@@ -385,20 +443,20 @@ return data;
                 <img src="failed.png">
                 </img>
                 <span class="method-name">softAssertDemo</span>
-                <span class="method-start">135 ms</span>
+                <span class="method-start">128 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">testngTestcases.Testcase3</div> <!-- chronological-class-name -->
               <div class="test-method">
-                <span class="method-name">doSkip</span>
-                <span class="method-start">165 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">userReg</span>
                 <span class="method-start">173 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">doSkip</span>
+                <span class="method-start">179 ms</span>
               </div> <!-- test-method -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
