@@ -15,6 +15,8 @@ import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
+import extentlisteners.ExtentListeners;
+
 public class ReadProperties {
 public static WebDriver driver;
 static FileInputStream fis;
@@ -52,7 +54,7 @@ public static void type(String keyword,String value) {
 		log.error("Element is not found - unable to type on element with keyword: " + keyword);
 		log.error(e.getMessage());
 	}
-	//ExtentTest.test.info("")
+	ExtentListeners.test.info("Typed on field with a keyword as : " + keyword + " with  a value as : " + value);
 	log.info("Typed on field with a keyword as : " + keyword + " with  a value as : " + value);
 }
 
