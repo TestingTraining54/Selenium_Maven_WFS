@@ -52,6 +52,7 @@ public static void type(String keyword,String value) {
 		log.error("Element is not found - unable to type on element with keyword: " + keyword);
 		log.error(e.getMessage());
 	}
+	//ExtentTest.test.info("")
 	log.info("Typed on field with a keyword as : " + keyword + " with  a value as : " + value);
 }
 
