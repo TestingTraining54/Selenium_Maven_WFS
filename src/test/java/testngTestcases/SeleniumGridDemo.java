@@ -31,7 +31,7 @@ public class SeleniumGridDemo {
 			cap = new EdgeOptions();
 		}
 		
-		driver = new RemoteWebDriver(new URL("http://192.168.29.217:4444/"), cap);
+		driver = new RemoteWebDriver(new URL("http://localhost:4444/"), cap);
 		driver.get(url);
 		driver.manage().window().maximize();
 		

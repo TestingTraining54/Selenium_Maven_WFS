@@ -7,29 +7,18 @@
     <classes>
       <class name="testngTestcases.SeleniumGridDemo">
         <methods>
-          <include name="openBrowser"/>
+          <include name="openBrowser" invocation-numbers="0"/>
         </methods>
       </class> <!-- testngTestcases.SeleniumGridDemo -->
     </classes>
   </test> <!-- Chrome Testcase(failed) -->
-  <test thread-count="5" name="Firefox Testcase(failed)">
-    <parameter name="siteurl" value="https://facebook.com"/>
-    <parameter name="browser" value="firefox"/>
-    <classes>
-      <class name="testngTestcases.SeleniumGridDemo">
-        <methods>
-          <include name="openBrowser"/>
-        </methods>
-      </class> <!-- testngTestcases.SeleniumGridDemo -->
-    </classes>
-  </test> <!-- Firefox Testcase(failed) -->
   <test thread-count="5" name="Edge Testcase(failed)">
     <parameter name="siteurl" value="https://facebook.com"/>
     <parameter name="browser" value="edge"/>
     <classes>
       <class name="testngTestcases.SeleniumGridDemo">
         <methods>
-          <include name="openBrowser"/>
+          <include name="openBrowser" invocation-numbers="0"/>
         </methods>
       </class> <!-- testngTestcases.SeleniumGridDemo -->
     </classes>
